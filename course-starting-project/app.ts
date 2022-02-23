@@ -1,14 +1,15 @@
-// const person: {
-//   name: string;
-//   age: number;
-// } = {
-const person = {
-  name: "wook",
-  age: 30,
-  hobbies: ['sports', 'cooking'],
+let userInput: unknown;
+let userName: string;
+
+userInput = "Max";
+
+if (typeof userInput === 'string') {
+  userName = userInput;
+  console.log(userName);
 }
 
-let favoriteActivities: string[];
-favoriteActivities = ['sports', 1];
+function generateError(message: string, code: number) {
+  // throw { message: message, errorCode: code };  
+}
 
-console.log(person.name);
+generateError("An error occured", 500);
